@@ -3,7 +3,7 @@ let hours = 0, minutes = 0, seconds = 0, milliseconds = 0;
 let timer;
 let running = false;
 
-//Timer start function
+//Start Timer
 function startTimer() {
 
     if(!running){
@@ -29,10 +29,21 @@ function startTimer() {
     }
 }
 
-//Stop function
+//Stop timer
 function stopTimer() {
     running = false;
     clearInterval(timer);
+}
+
+//Reset timer
+function resetTimer() {
+    running =false;
+    clearInterval(timer);
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    milliseconds = 0;
+    updateDisplay();
 }
 
 //update
@@ -49,5 +60,8 @@ start.addEventListener('click',startTimer);
 
 const stop = document.getElementById('stop');
 stop.addEventListener('click',stopTimer);
+
+const reset = document.getElementById('reset');
+reset.addEventListener('click',resetTimer);
 
 
