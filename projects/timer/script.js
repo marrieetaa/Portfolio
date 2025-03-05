@@ -29,6 +29,12 @@ function startTimer() {
     }
 }
 
+//Stop function
+function stopTimer() {
+    running = false;
+    clearInterval(timer);
+}
+
 //update
 function updateDisplay () {
     document.getElementById('hours').innerText = String(hours).padStart(2,"0"); //00 format
@@ -40,5 +46,8 @@ function updateDisplay () {
 //
 const start = document.getElementById('start');
 start.addEventListener('click',startTimer);
+
+const stop = document.getElementById('stop');
+stop.addEventListener('click',stopTimer);
 
 
