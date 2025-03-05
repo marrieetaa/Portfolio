@@ -31,4 +31,17 @@ body {
     cursor: pointer;
 }
 
-
+@media (max-width: 625px){
+    body{
+        font-size: 2rem;
+        background-color: rgb(175, 84, 99);
+        color: whitesmoke;
+    }
+    .container {
+        padding: 5px;
+        flex-direction: column;
+    }
+    .buttons button {
+        font-size: 1rem;
+    }
+}
