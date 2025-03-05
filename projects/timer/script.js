@@ -46,7 +46,7 @@ function resetTimer() {
     updateDisplay();
 }
 
-//update
+//Update the time on screen
 function updateDisplay () {
     document.getElementById('hours').innerText = String(hours).padStart(2,"0"); //00 format
     document.getElementById('minutes').innerText = String(minutes).padStart(2,"0");
@@ -54,14 +54,14 @@ function updateDisplay () {
     document.getElementById('milliseconds').innerText = String(Math.floor(milliseconds /10)).padStart(2,"0");
 }
 
-//
+//Selecting the buttons
 const start = document.getElementById('start');
-start.addEventListener('click',startTimer);
-
 const stop = document.getElementById('stop');
-stop.addEventListener('click',stopTimer);
-
 const reset = document.getElementById('reset');
+
+//Binding functions to the buttons
+start.addEventListener('click',startTimer);
+stop.addEventListener('click',stopTimer);
 reset.addEventListener('click',resetTimer);
 
 
