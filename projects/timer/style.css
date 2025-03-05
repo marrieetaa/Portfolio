@@ -16,3 +16,19 @@ body {
     box-sizing: border-box; 
 }
 
+.timer {
+    color: rgb(13, 128, 97);
+}
+
+.buttons button {
+    font-size: 2rem;
+    padding: 10px 17px;
+    color: #52796f;
+    background-color: pink;
+    border: none;
+    border-radius:10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
