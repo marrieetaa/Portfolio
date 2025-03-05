@@ -1,0 +1,49 @@
+<!-- Declare the document type as HTML5 -->
+<!DOCTYPE html>
+<!-- Start the HTML document and set the language to English -->
+<html lang="en">
+<!-- Head section of the document -->
+<head>
+    <!-- Specifies the head section of the document -->
+    <meta charset="UTF-8">
+    <!-- Ensures the page is responsive and scales properly on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage as `Timer`-->
+    <title>Timer</title>
+    <!-- Link the external CSS file to style the page -->
+    <link rel="stylesheet" href="style.css">
+<!--End of the `Head` section  -->
+</head>
+<!-- Start the body of the webpage -->
+<body>
+    <!-- Create a container <div> for the `StopWatch` -->
+    <div class="container">
+        <!--Display the heading 'StopWatch'-->
+        <h1>StopWatch</h1>
+        <!-- Display area for the timer -->
+        <div class="timer">
+            <!--Display hours,initializzed 00-->
+            <span id="hours">00</span>:
+             <!--Display minutes,initializzed 00-->
+            <span id="minutes">00</span>:
+             <!--Display seconds,initializzed 00-->
+            <span id="seconds">00</span>:
+             <!--Display milliseconds,initializzed 00-->
+            </span><span id="milliseconds">00</span>
+        </div>
+        <!-- Create a div to hold the buttons and to contorl the stopwatch -->
+         <div class="buttons">
+            <!-- Button to start the `StopWatch`-->
+            <button id="start">Start</button>
+            <!-- Button to stop the `StopWatch` -->
+            <button id="stop">Stop</button>
+            <!-- Button to reset the `StopWatch`-->
+            <button id="reset">Reset</button>
+         </div>
+    </div>
+    <!-- Link the ecternal JavaScript file to control the `StopWatch`-->
+    <script src="script.js"></script>
+<!--End the body of the page-->
+</body>
+<!--End the HTML document -->
+</html>

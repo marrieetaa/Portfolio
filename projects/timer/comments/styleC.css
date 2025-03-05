@@ -1,0 +1,49 @@
+body {
+    margin: 0;  /* Remove default margin from the body*/
+    padding: 0; /*Remove default padding from the body */
+    font-family:"Josefin Sans", serif; /*Set the font to `Josefin Sans` as fallback */
+    font-size: 3rem; /*Set the base font size to 3 rem */
+    background-color: #f4f4f4; /*Set the background color of the body */
+}
+
+.container {
+    display: flex; /*Use flexbox layout for the container */
+    flex-direction: column; /*Arrange items in a column */
+    justify-content: center; /*Center items vertically */
+    align-items: center; /*Center items horizontaly */
+    height: 100vh; /* Set the container's height to 100% of the viewport height*/
+    padding: 20px; /*Add padding around the container */
+    box-sizing: border-box; /*Encure padding is included in the element's total width/height */
+}
+
+.timer {
+    color: rgb(13, 128, 97); /*Set the text color of the timer */
+}
+
+.buttons button {
+    font-size: 2rem; /*Set the font size of the buttons for 2 rem */
+    padding: 10px 17px; /*Add padding inside the buttons */
+    color: #52796f; /* Set the text color of the buttons*/
+    background-color: pink;/*Set the background color to pink*/
+    border: none; /*Remove the default border */
+    border-radius:10px; /*Round the corners of the buttons */
+    margin-top: 20px; /*Add space above the buttons */
+    cursor: pointer; /*Change the cursor to a pointer when hovering over the button */
+}
+
+/* Media query for screens with a maximum width of 625px */
+@media (max-width: 625px){
+    /* Style changes for smaller screens */
+    body{
+        font-size: 2rem; /*Reduce the font size 2 rem */
+        background-color: rgb(175, 84, 99); /*Change the backgorund color for smaller screens */
+        color: whitesmoke; /*Change the text color */
+    }
+    .container {
+        padding: 5px; /*Reduce padding */
+        flex-direction: column; /*Encure the container;s items stay in column layout */
+    }
+    .buttons button {
+        font-size: 1rem; /*Reduce the font size of the buttons */
+    }
+}
