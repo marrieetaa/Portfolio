@@ -17,3 +17,6 @@ function generateRandomQuote() {
     quote.textContent = randomQuote;
 }
 
+//The function will execute when the button is clicked
+const button  = document.getElementById('new-quote-btn');
+button.addEventListener('click',generateRandomQuote);
