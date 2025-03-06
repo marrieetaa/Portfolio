@@ -7,3 +7,13 @@ const quotes = [
   'In the end, we will remember not the words of our enemies, but the silence of our friends.',
   'We cannot solve problems with the kind of thinking we employed when we came up with them.\n -Albert Einstein'
 ]
+
+//Random Quote Generator Function
+function generateRandomQuote() {
+    const quotesArrLength = quotes.length;
+    const randomIndex = Math.floor(Math.random() * quotesArrLength);
+    const randomQuote = quotes[randomIndex];
+    const quote = document.getElementById('quote-text');
+    quote.textContent = randomQuote;
+}
+
