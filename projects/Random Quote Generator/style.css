@@ -9,3 +9,16 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+h1 {
+    color:#155598 ;
+    font-size: 3rem;
+}
+
+#quote-text {
+    color:#580c28;
+    font-size: 2rem;
+    font-family: 'josefin Sans' ,serif;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
