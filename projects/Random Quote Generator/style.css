@@ -37,3 +37,19 @@ h1 {
     color: white;
     background-color:  #3ea28d;
 }
+
+@media(max-width:700px) {
+    body {
+        background-color: rgb(178, 77, 77);
+    }
+    #quote-text {
+        color: white;
+    }
+    #new-quote-btn {
+       color: #155598;
+    }
+    #new-quote-btn:hover {
+        background-color: #155598;
+    }
+    
+}
