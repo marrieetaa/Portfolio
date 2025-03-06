@@ -22,3 +22,18 @@ h1 {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
+
+#new-quote-btn {
+    border: 1.5px solid pink;
+    border-radius: 5px;
+    color: #3ea28d;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+#new-quote-btn:hover {
+    color: white;
+    background-color:  #3ea28d;
+}
