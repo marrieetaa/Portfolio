@@ -1,0 +1,52 @@
+body {
+    background-color:#f59898;
+}
+
+#dice-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#dice-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.image {
+    width: 22vw;
+    max-width: 350px;
+    height: auto;
+}
+
+h1 {
+    font-size:5rem;
+    color: #9e261b;
+}
+
+#result-text {
+    font-size: 1.5rem;
+    color:#793120 ;
+    margin: 20px 0;
+}
+
+#dice-button {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: brown;
+    border-radius: 10px;
+    transition: bakcground 0.4s;
+}
+
+#dice-button:hover {
+    background-color: brown;
+    color: white;
+}
