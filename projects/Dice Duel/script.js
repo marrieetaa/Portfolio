@@ -3,14 +3,23 @@ const randomNumber = () => Math.floor(Math.random() * 6 ) + 1;
 
 //Roll Dice function
 const rollDice = () => {
-let randomNum1 = randomNumber();
-let randomNum2 = randomNumber(); 
-const image1 = document.getElementById('image1');
-const image2 = document.getElementById('image2');
-image1.src = `dicePictures/dice${randomNum1}.png`;
-image2.src = `dicePictures/dice${randomNum2}.png`;
-image1.alt = `Dice showing ${randomNum1}`;
-image2.alt = `Dice showing ${randomNum2}`;
+  let randomNum1 = randomNumber();
+  let randomNum2 = randomNumber(); 
+  const dice1 = document.getElementById('image1');
+  const dice2 = document.getElementById('image2');
+//
+dice1.classList.add('rolling');
+dice2.classList.add('rolling');
+//
+setTimeout(() => {
+  dice1.src = `dicePictures/dice${randomNum1}.png`;
+  dice2.src = `dicePictures/dice${randomNum2}.png`;
+  dice1.alt = `Dice showing ${randomNum1}`;
+  dice2.alt = `Dice showing ${randomNum2}`;
+
+//
+dice1.classList.remove('rolling');
+dice2.classList.remove('rolling'); 
 
 //Display the result on the screen
 const resultText = document.getElementById('result-text');
@@ -23,7 +32,8 @@ const result = () => {
     return resultText.innerText = 'Tie';
    }
 }
-result()
+   result()
+ },500)
 }
 
 //

@@ -50,3 +50,15 @@ h1 {
     background-color: brown;
     color: white;
 }
+
+@keyframes rollDice {
+    0% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-20px) rotate(90deg); }
+    50% { transform: translateY(10px) rotate(180deg); }
+    75% { transform: translateY(-10px) rotate(270deg); }
+    100% { transform: translateY(0) rotate(360deg); }
+}
+
+.rolling {
+    animation: rollDice 0.5s ease-in-out infinite;
+}
